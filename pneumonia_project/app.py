@@ -5,6 +5,9 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import SMOTE
 
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
 app = Flask(__name__)
 
 # Global variables to hold our model and preprocessing tools
