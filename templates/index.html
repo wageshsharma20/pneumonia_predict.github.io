@@ -1,173 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Pneumonia Prediction System</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 500px;
-            margin: 60px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-
-        h2 {
-            text-align: center;
-            color: #2a5298;
-            margin-bottom: 10px;
-        }
-
-        p {
-            text-align: center;
-            color: #555;
-            margin-bottom: 25px;
-        }
-
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 12px;
-        }
-
-        select, input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 6px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            width: 100%;
-            margin-top: 20px;
-            padding: 12px;
-            background: #2a5298;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #1e3c72;
-        }
-
-        .result {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: bold;
-            display: none;
-        }
-
-        .high {
-            background: #ffe5e5;
-            color: #c0392b;
-        }
-
-        .low {
-            background: #e6ffe6;
-            color: #27ae60;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wagesh Sharma — Software Engineer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="container">
+    
+    <header class="glass-panel main-header slide-up">
+      <div class="header-content">
+        <div class="logo-group">
+          <div class="logo">WS</div>
+          <div class="header-titles">
+            <h1>Wagesh Sharma</h1>
+            <p>CS Student @ DTU • Web Architect</p>
+          </div>
+        </div>
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<div class="container">
-    <h2>Pneumonia Prediction System</h2>
-    <p>Enter patient clinical metrics</p>
+    <div class="main-grid">
+      
+      <main>
+        <section id="about" class="glass-panel slide-up" style="animation-delay: 0.1s;">
+          <h2><i class="fa-solid fa-user-astronaut"></i> About Me</h2>
+          <div class="text-content">
+            <p>I'm a computer science enthusiast currently pursuing my BTech at <strong>Delhi Technological University (DTU)</strong>.</p>
+            <p>My focus is on creating seamless digital experiences using modern web standards. I enjoy the challenge of turning complex logic into clean, functional code.</p>
+          </div>
+        </section>
 
-    <label>Fever</label>
-    <select id="fever">
-        <option>Yes</option>
-        <option>No</option>
-    </select>
+        <section id="skills" class="glass-panel slide-up" style="animation-delay: 0.2s;">
+          <h2><i class="fa-solid fa-code"></i> Technical Arsenal</h2>
+          <div class="tags">
+            <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="tag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+            <span class="tag"><i class="fa-solid fa-flask"></i> Flask</span>
+            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript ES6+</span>
+            <span class="tag"><i class="fa-solid fa-c"></i> C/C++ Programming</span>
+            <span class="tag"><i class="fa-brands fa-html5"></i> Semantic HTML</span>
+            <span class="tag"><i class="fa-solid fa-layer-group"></i> CSS Architecture</span>
+            <span class="tag"><i class="fa-solid fa-terminal"></i> Problem Solving</span>
+          </div>
+        </section>
 
-    <label>Tachycardia</label>
-    <select id="tachycardia">
-        <option>Yes</option>
-        <option>No</option>
-    </select>
+        <section id="projects" class="glass-panel slide-up" style="animation-delay: 0.3s;">
+          <h2><i class="fa-solid fa-rocket"></i> Featured Projects</h2>
+          <div class="project-list">
+            
+            <a href="https://pneumonia-predict-github-io.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="project-icon"><i class="fa-solid fa-stethoscope"></i></div>
+              <div class="project-info">
+                <h4>Pneumonia Prediction System</h4>
+                <p>ML web app predicting clinical risks using Gradient Boosting.</p>
+              </div>
+              <i class="fa-solid fa-arrow-right project-arrow"></i>
+            </a>
 
-    <label>Crackles</label>
-    <select id="crackles">
-        <option>Yes</option>
-        <option>No</option>
-    </select>
+            <a href="#" class="project-card">
+              <div class="project-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="project-info">
+                <h4>Record Management System</h4>
+                <p>High-performance CLI tool developed in C.</p>
+              </div>
+              <i class="fa-solid fa-arrow-right project-arrow"></i>
+            </a>
 
-    <label>Oxygen Saturation (SpO2 %)</label>
-    <input type="number" id="oxygen_saturation" step="0.1">
+            <a href="#" class="project-card">
+              <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+              <div class="project-info">
+                <h4>Modern Portfolio</h4>
+                <p>Responsive design featuring Glassmorphism UI.</p>
+              </div>
+              <i class="fa-solid fa-arrow-right project-arrow"></i>
+            </a>
 
-    <label>WBC Count (10^9/L)</label>
-    <input type="number" id="wbc_count" step="0.1">
+          </div>
+        </section>
+      </main>
 
-    <label>Chest X-Ray Result</label>
-    <select id="xray_result">
-        <option>Normal</option>
-        <option>Consolidation</option>
-        <option>Effusion</option>
-    </select>
+      <aside>
+        <div class="profile-card glass-panel slide-up" style="animation-delay: 0.4s;">
+          <div class="profile-img-container">
+            <img src="profile.jpg" alt="Wagesh Sharma" onerror="this.src='https://via.placeholder.com/150/6366f1/ffffff?text=WS'">
+          </div>
+          <h3>Wagesh Sharma</h3>
+          <p class="highlight">BTech CS @ DTU</p>
+          <p class="location"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
+        </div>
 
-    <button onclick="predict()">Predict</button>
+        <section id="contact" class="glass-panel slide-up" style="animation-delay: 0.5s;">
+          <h2>Let's Connect</h2>
+          <div class="contact-links">
+            <a href="mailto:wageshsharma20@gmail.com" class="contact-item">
+              <div class="icon-box"><i class="fa-regular fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <span>wageshsharma20@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/wageshsharma20" target="_blank" class="contact-item">
+              <div class="icon-box"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-text">
+                <h4>GitHub</h4>
+                <span>Check out my code</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/wagesh-sharma-b0983a375/" target="_blank" class="contact-item">
+              <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-text">
+                <h4>LinkedIn</h4>
+                <span>Let's network</span>
+              </div>
+            </a>
+          </div>
+        </section>
 
-    <div id="resultBox" class="result"></div>
-</div>
+        <div class="glass-panel slide-up" style="animation-delay: 0.6s;">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for Collaborations</span>
+          </div>
+        </div>
+      </aside>
 
-<script>
-async function predict() {
+    </div>
 
-    const data = {
-        fever: document.getElementById("fever").value,
-        tachycardia: document.getElementById("tachycardia").value,
-        crackles: document.getElementById("crackles").value,
-        oxygen_saturation: document.getElementById("oxygen_saturation").value,
-        wbc_count: document.getElementById("wbc_count").value,
-        xray_result: document.getElementById("xray_result").value
-    };
+    <footer>
+      <p>© <span id="year"></span> Wagesh Sharma. Built with passion.</p>
+    </footer>
 
-    const response = await fetch('/predict', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    });
+  </div>
 
-    const result = await response.json();
-
-    const box = document.getElementById("resultBox");
-
-    if (result.success) {
-        box.style.display = "block";
-
-        if (result.prediction.includes("High")) {
-            box.className = "result high";
-        } else {
-            box.className = "result low";
-        }
-
-        box.innerHTML = `
-            ${result.prediction} <br>
-            Probability: ${result.probability}
-        `;
-    } else {
-        alert("Error: " + result.error);
-    }
-}
-</script>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
